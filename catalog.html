@@ -31,7 +31,82 @@
 	<aside>
         <h2>Стоимость</h2>
 
-        <h2>Фильтр товаров</h2>
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+
+<form method="get" action="https://echo.htmlacademy.ru">
+
+    <fieldset>
+            <legend>Сетка:</legend>
+            <ul>
+                <li>
+                <label>
+                <input type="radio" name="makeup-group" value="adaptive" checked>
+                Адаптивная   
+                </label>
+            </li>
+                <li>
+                <label>
+                <input type="radio" name="makeup-group" value="fixed">
+                 Фиксированная
+                </label>    
+            </li>
+                <li>
+                <label>
+                <input type="radio" name="makeup-group" value="rubber">
+                 Резиновая
+                </label>    
+            </li>
+            </ul>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Особенности</legend>
+            <ul>
+                <li> 
+                    <label> 
+                    <input type="checkbox" name="slider" checked> 
+                      Слайдер
+                    </label>
+                    
+                </li>
+
+                <li>
+                <label> 
+                    <input type="checkbox" name="pluses">
+                    Блок приемуществ
+                </label>
+                
+                </li>
+
+                <li> 
+                <label> 
+                    <input type="checkbox" name="news" checked>
+                    Новости
+                    </label>
+                </li>
+
+
+                <li> 
+                <label> 
+                    <input type="checkbox" name="gallery">
+                    Галерея
+                    </label>
+                </li>
+
+                <li> 
+                <label> 
+                    <input type="checkbox" name="basket">
+                    Корзина
+                    </label>
+                    
+                </li>
+            </ul>
+        </fieldset> 
+
+        <button>Показать</button>
+
+    </form>
         
       </aside>
     <section>
@@ -43,7 +118,7 @@
         </ul>
 
 
-    	<h2>Шаблоны</h2>
+    	<h2 class="visually-hidden">Шаблоны</h2>
     	
     	<ul>
     		<li>
@@ -61,15 +136,85 @@
 
     		</li>
 
-    		<li><a href="#"><img src="img/img-pink.jpg" alt="Приложение для мобильных устройств Пинк" width="360" height="576"></a></li>
+    		<li>
+                <a href="#"><img src="img/img-pink.jpg" alt="Приложение для мобильных устройств Пинк" width="360" height="576"></a>
+                <div>
+                <a href="#">
+                <h3>Pink APP</h3>
+            </a>
+                
+                <p>Продуктовый лендинг приложения для iOS  и Android</p>
+                <button>9 900 руб.</button>
+            
+            </div>
 
-    		<li><a href="#"><img src="img/img-barbershop.jpg" alt="Барбершоп Бородинский" width="360" height="576"></a></li>
+            </li>
 
-    		<li><a href="#"><img src="img/img-mishka.jpg" alt="Товары для дома ручной работы Мишка" width="360" height="576"></a></li>
 
-    		<li><a href="#"><img src="img/img-aplus.jpg" alt="Учебный центр Аплюс" width="360" height="576"></a></li>
 
-    		<li><a href="#"><img src="img/img-kvast.jpg" alt="Магазин крафтового кваса Кваст" width="360" height="576"></a></li>
+    		<li>
+                <a href="#"><img src="img/img-barbershop.jpg" alt="Барбершоп Бородинский" width="360" height="576"></a>
+                <div>
+                <a href="#">
+                <h3>Barbershop</h3>
+            </a>
+                
+                <p>Сайт салона красоты. Для мужчин, да</p>
+                <button>9 900 руб.</button>
+            
+            </div>
+
+            </li>
+
+
+
+    		<li>
+                <a href="#"><img src="img/img-mishka.jpg" alt="Интернет-магазин вязаных игрушек Мишка" width="360" height="576"></a>
+
+                <div>
+                <a href="#">
+                <h3>Mishka</h3>
+            </a>
+                
+                <p>Интернет-магазин вязаных игрушек</p>
+                <button>9 900 руб.</button>
+            
+            </div>
+
+            </li>
+
+
+
+
+    		<li>
+                <a href="#"><img src="img/img-aplus.jpg" alt="Учебный центр Аплюс" width="360" height="576"></a>
+                <div>
+                <a href="#">
+                <h3>A Plus</h3>
+            </a>
+                
+                <p>Лендинг курсов для повышения квалификации</p>
+                <button>9 900 руб.</button>
+            
+            </div>
+
+            </li>
+
+
+    		<li>
+                <a href="#"><img src="img/img-kvast.jpg" alt="Магазин крафтового кваса Кваст" width="360" height="576"></a>
+                <div>
+                <a href="#">
+                <h3> Кваст </h3>
+            </a>
+                
+                <p>Промо-сайт производителя крафтового кваса</p>
+                <button>9 900 руб.</button>
+            
+            </div>
+
+
+            </li>
             
     	</ul>
 
@@ -83,13 +228,41 @@
     </ul>
 
     <section>
-        <h3>Как нас найти</h3>
+        <h3 class="visually-hidden">Как нас найти</h3>
     <div>
         <p>nёrds design studio</p>
         <p>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8 </p>
         <p>тел.+7(812)275-75-75 </p>
         <button type="button">Напишите нам</button>
     </div>
+
+    <form action="https://echo.htmlacademy.ru" method="post">
+    
+        <button type="button">X</button>
+
+        <h2>Напишите нам</h2>
+        <p>
+        <label> Ваше имя:
+            <input type="text"  name="user_name" placeholder="Имя Фамилия">
+        </label>
+        </p>
+
+        <p>
+        <label> Ваш e-mail:
+            <input type="email" name="user_email" placeholder="email@example.com" >
+        </label>
+        </p>
+
+        <p>
+        <label> Текст письма:
+            <textarea name="user_text" placeholder="В свободной форме"></textarea>
+        </label>
+        </p> 
+        
+
+        <button>Отправить</button>
+
+    </form>
 
     <p>
        <img src="img/map.jpg" alt="Офис компании расположен по адресу:191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8" width="1440" height="416">
