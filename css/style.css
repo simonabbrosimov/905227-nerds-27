@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #333333;
+  background-color: #ffffff;
+
+  
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+fieldset {
+	border:none;
+}
+
+
+.hidden-window {
+	display:none;
+}
+
+.visually-hidden {
+	display: none;
+}
+
+.button {
+  line-height:18px;	
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+}
+
+
+
+.common-header {
+   line-height: 30px;
+   font-weight: 500;
+   color: #000000;
+   background-color: #cccccc;
+   text-transform: uppercase;
+}
+
+.common-header li,
+.catalog-patterns li {
+ 	list-style: none;
+}
+
+
+.common-header a:hover {
+    color: #ff6666;
+}
+
+.common-header a:active {
+	color: #999999;
+}
+
+.common-header a:focus {
+	border-bottom: 2px solid #ff6666;
+	padding-bottom: 5px;
+	
+}
+
+.main-services h3 {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 30px;
+
+}
+
+.button-web {
+    background-color: #ff6666;	
+}
+
+.button-web:hover {
+	background-color: #ff3333;
+}
+
+.button-web:active {
+	background-color: #cc3333;
+	color: #cc9999;
+}
+
+.button-app {
+	background-color: #00cc66;
+}
+
+.button-app:hover {
+	background-color: #00cc66;
+}
+
+.button-app:active {
+	background-color: #009966;
+	color:#33cc66;
+}
+
+.button-presentation {
+	background-color: #ffcc33;
+}
+
+.button-presentation:hover {
+	background-color: #ffcc33;
+}
+
+.button-presentation:active {
+	background-color: #cc9933;
+	color: #ffcc66;
+}
+
+
+.common-footer .offer {
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 700;
+}
+
+.common-footer .discount {
+	line-height: 22px;
+}
+
+.catalog-title h1 {
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: 500;
+	text-align: center;
+
+}
+
+.catalog-title {
+	background-color: #cccccc;
+
+}
+
+.catalog-form-title {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+	color:#000000;
+}
+
+.catalog-form-items {
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 400;
+	color: #333333;
+	list-style: none;
+
+}
+
+.catalog-form-button {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 18px;
+	color:#333333;
+	background-color: #cccccc;
+	border:none;
+	text-align: center;
+	vertical-align: middle;
+}
+

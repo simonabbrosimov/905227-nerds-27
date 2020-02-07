@@ -3,30 +3,34 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Дизайн-студия Нёрдс</title>
+     <link href="css/normalize.css" rel="stylesheet">
+     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-	<header>
+	<header class="common-header">
 
-	<nav>
+	<nav class="common-navigation">
  		<a href="index.html">
  		<img src="img/nerds-logo.svg" alt="Логотип дизайн-студии Нёрдс" width="160" height="65"> 
  	    </a>
- 		<ul>
+ 		<ul class="site-navigation">
  			<li><a href="#">Студия</a></li>
  			<li><a href="#">Клиенты</a></li>
  			<li>Магазин</li>
  			<li><a href="#">Контакты</a></li>
  		</ul>
  		<ul>
- 		<li><a href="#">Корзина</a></li>
+ 		<li class="basket-navigation"><a href="#">Корзина</a></li>
  	    </ul>
  	</nav>
 
 </header>
 
 <main>
-	
+
+<div class="catalog-title">	
 <h1>Магазин готовых шаблонов</h1>
+</div>
 
 	<aside>
         <h2>Стоимость</h2>
@@ -36,8 +40,8 @@
 <form method="get" action="https://echo.htmlacademy.ru">
 
     <fieldset>
-            <legend>Сетка:</legend>
-            <ul>
+            <legend class="catalog-form-title">Сетка:</legend>
+            <ul class="catalog-form-items">
                 <li>
                 <label>
                 <input type="radio" name="makeup-group" value="adaptive" checked="checked">
@@ -61,8 +65,8 @@
         </fieldset>
 
         <fieldset>
-            <legend>Особенности</legend>
-            <ul>
+            <legend class="catalog-form-title">Особенности:</legend>
+            <ul class="catalog-form-items">
                 <li> 
                     <label> 
                     <input type="checkbox" name="slider" checked="checked"> 
@@ -104,7 +108,7 @@
             </ul>
         </fieldset> 
 
-        <button type="button">Показать</button>
+        <button class="catalog-form-button"   type="button">Показать</button>
 
     </form>
         
@@ -120,10 +124,10 @@
 
     	<h2 class="visually-hidden">Шаблоны</h2>
     	
-    	<ul>
+    	<ul class="catalog-patterns">
     		<li>
                 <a href="#"><img src="img/img-sedona.jpg" alt="Информационный сайт для туристов Седона" width="360" height="576"></a>
-    			<div>
+    			<div class="hidden-window">
     			<a href="#">
     			<h3>Sedona</h3>
             </a>
@@ -138,7 +142,7 @@
 
     		<li>
                 <a href="#"><img src="img/img-pink.jpg" alt="Приложение для мобильных устройств Пинк" width="360" height="576"></a>
-                <div>
+                <div class="hidden-window">
                 <a href="#">
                 <h3>Pink APP</h3>
             </a>
@@ -154,7 +158,7 @@
 
     		<li>
                 <a href="#"><img src="img/img-barbershop.jpg" alt="Барбершоп Бородинский" width="360" height="576"></a>
-                <div>
+                <div class="hidden-window">
                 <a href="#">
                 <h3>Barbershop</h3>
             </a>
@@ -171,7 +175,7 @@
     		<li>
                 <a href="#"><img src="img/img-mishka.jpg" alt="Интернет-магазин вязаных игрушек Мишка" width="360" height="576"></a>
 
-                <div>
+                <div class="hidden-window">
                 <a href="#">
                 <h3>Mishka</h3>
             </a>
@@ -188,7 +192,7 @@
 
     		<li>
                 <a href="#"><img src="img/img-aplus.jpg" alt="Учебный центр Аплюс" width="360" height="576"></a>
-                <div>
+                <div class="hidden-window">
                 <a href="#">
                 <h3>A Plus</h3>
             </a>
@@ -203,7 +207,7 @@
 
     		<li>
                 <a href="#"><img src="img/img-kvast.jpg" alt="Магазин крафтового кваса Кваст" width="360" height="576"></a>
-                <div>
+                <div class="hidden-window">
                 <a href="#">
                 <h3> Кваст </h3>
             </a>
@@ -274,19 +278,20 @@
 </main>
 
 
-<footer>
-	
-	<div>
-	<p>Давайте дружить, это выгодно</p>
-	<p>Скидка 10% для друзей из социальных сетей</p>
-	<ul>
-			<li><a href="#">Вконтакте</a></li>
-			<li><a href="#">Фейсбук</a></li>
-			<li><a href="#">Инстаграмм</a></li>
-		</ul>	
-	</div>  
-	
+<footer class="common-footer">
+    
+    <div>
+    <p class="offer">Давайте дружить, это выгодно</p>
+    <p class="discount">Скидка 10% для друзей из социальных сетей</p>
+    <ul class="footer-social">
+            <li><a href="#">Вконтакте</a></li>
+            <li><a href="#">Фейсбук</a></li>
+            <li><a href="#">Инстаграмм</a></li>
+        </ul>   
+    </div>  
+    
 </footer>   
+
 	
 </body>
 </html>
