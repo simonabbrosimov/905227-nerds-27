@@ -8,6 +8,7 @@ body {
   color: #333333;
   background-color: #ffffff;
 
+
   
 }
 
@@ -20,6 +21,17 @@ fieldset {
 	border:none;
 }
 
+button {
+	border: none;
+}
+
+legend {
+	text-transform: uppercase;
+}
+
+li {
+	list-style: none;
+}
 
 .hidden-window {
 	display:none;
@@ -49,10 +61,7 @@ fieldset {
    text-transform: uppercase;
 }
 
-.common-header li,
-.catalog-patterns li {
- 	list-style: none;
-}
+
 
 
 .common-header a:hover {
@@ -67,6 +76,30 @@ fieldset {
 	border-bottom: 2px solid #ff6666;
 	padding-bottom: 5px;
 	
+}
+
+.privileges {
+	background-color: #cccccc;
+}
+
+.privileges h3 {
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.privileges .button {
+	background-color: #ff6666;
+}
+
+.privileges .button:hover {
+	background-color: #ff3333;
+}
+
+.privileges .button:active {
+	background-color: #cc3333;
+	color:#cc9999;
 }
 
 .main-services h3 {
@@ -116,6 +149,56 @@ fieldset {
 }
 
 
+.information p:nth-of-type(1) {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.information p:nth-of-type(4),
+.information p:nth-of-type(5)
+ {
+ 	color:#000000;
+	font-weight: 700;
+}
+
+ .percent-table td{
+	font-size: 45px;
+	line-height: 10px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.definition-table td{
+	line-height: 18px;
+}
+
+.pages {
+	line-height: 18px;
+	font-weight: 500;
+	color:#000000;
+	text-transform: uppercase;
+	
+}
+
+.address p {
+	font-size: 18px;
+	line-height: 18px;
+
+}
+
+.address p:nth-child(1) {
+	line-height: 30px;
+	font-weight: 700;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.address .button {
+	background-color: #ff6666;
+}
+
 .common-footer .offer {
 	font-size: 36px;
 	line-height: 36px;
@@ -137,6 +220,42 @@ fieldset {
 .catalog-title {
 	background-color: #cccccc;
 
+}
+
+
+
+.catalog-price h2 {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+	color:#000000;
+	text-transform: uppercase;
+}
+
+.catalog-sort-title  {
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: 700;
+	color:#000000;
+	text-transform: uppercase;
+}
+
+
+
+
+.catalog-sort li {
+	font-size: 14px;
+	line-height: 18px;
+	color:#cccccc;
+	text-transform: uppercase;
+}
+
+.catalog-sort li:hover {
+	color:#999999;
+}
+
+.catalog-sort li:active {
+	color:#000000;
 }
 
 .catalog-form-title {
