@@ -7,10 +7,9 @@ body {
   font-weight: 400;
   color: #333333;
   background-color: #ffffff;
-
-
   
 }
+
 
 a {
   text-decoration: none;
@@ -38,8 +37,16 @@ li {
 }
 
 .visually-hidden {
-	display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
 }
+
 
 .button {
   line-height:18px;	
@@ -68,15 +75,20 @@ li {
     color: #ff6666;
 }
 
-.common-header a:active {
-	color: #999999;
-}
-
 .common-header a:focus {
 	border-bottom: 2px solid #ff6666;
 	padding-bottom: 5px;
-	
+
 }
+
+.common-header a:active {
+	color: #999999;
+	border-bottom: none;
+}
+
+
+	
+
 
 .privileges {
 	background-color: #cccccc;
@@ -149,15 +161,15 @@ li {
 }
 
 
-.information p:nth-of-type(1) {
+.who-we-are {
 	font-size: 45px;
 	line-height: 45px;
 	font-weight: 500;
 	color: #000000;
 }
 
-.information p:nth-of-type(4),
-.information p:nth-of-type(5)
+.orders,
+.principles
  {
  	color:#000000;
 	font-weight: 700;
@@ -188,7 +200,7 @@ li {
 
 }
 
-.address p:nth-child(1) {
+.trademark {
 	line-height: 30px;
 	font-weight: 700;
 	color: #000000;
