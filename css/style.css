@@ -28,11 +28,11 @@ legend {
 	text-transform: uppercase;
 }
 
-li {
+.without-markers li {
 	list-style: none;
 }
 
-table {
+.information-table  {
 	padding-top: 45px;
 	text-align: left;
 }
@@ -115,7 +115,6 @@ table {
 }	
 
 .common-navigation img {
-	order: -1;
 	width:160px;
 }
 
