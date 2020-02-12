@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
 	<title>Дизайн-студия Нёрдс</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic">
      <link href="css/normalize.css" rel="stylesheet">
      <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 	<header class="common-header">
-
+    <div class="container">
 	<nav class="common-navigation">
  		<a href="index.html">
  		<img src="img/nerds-logo.svg" alt="Логотип дизайн-студии Нёрдс" width="160" height="65"> 
@@ -19,11 +20,12 @@
  			<li class="shop">Магазин</li>
  			<li><a href="#">Контакты</a></li>
  		</ul>
- 		<ul>
- 		<li class="basket-navigation"><a href="#">Корзина</a></li>
+        
+ 		<ul class="basket-navigation">
+ 		<li ><a href="#">Корзина</a></li>
  	    </ul>
  	</nav>
-
+    </div>
 </header>
 
 <main>
@@ -31,7 +33,9 @@
 <div class="catalog-title">	
 <h1>Магазин готовых шаблонов</h1>
 </div>
-
+<div class="container">
+<div class="catalog">
+   <div class="column-left">
 	<aside>
         <h2 class="catalog-price">Стоимость</h2>
 
@@ -113,20 +117,25 @@
     </form>
         
       </aside>
+  </div>
       
-    <section >
+     <div class="column-right"> 
+    <section>
+        <div class="sorting">
         <h2 class="catalog-sort-title">Сортировать:</h2>
-        <ul class="catalog-sort">
+        <ul class="catalog-sort-list">         
             <li>По цене</li>
             <li>По типу</li>
             <li>По названию</li>
         </ul>
+        </div>
 
-
+        
     	<h2 class="visually-hidden">Шаблоны</h2>
     	
-    	<ul class="catalog-patterns">
-    		<li>
+    	<ul class="catalog-list">
+
+    		<li class="catalog-item">
                 <a href="#"><img src="img/img-sedona.jpg" alt="Информационный сайт для туристов Седона" width="360" height="576"></a>
     			<div class="hidden-window">
     			<a href="#">
@@ -141,7 +150,7 @@
 
     		</li>
 
-    		<li>
+    		<li class="catalog-item">
                 <a href="#"><img src="img/img-pink.jpg" alt="Приложение для мобильных устройств Пинк" width="360" height="576"></a>
                 <div class="hidden-window">
                 <a href="#">
@@ -157,7 +166,7 @@
 
 
 
-    		<li>
+    		<li class="catalog-item">
                 <a href="#"><img src="img/img-barbershop.jpg" alt="Барбершоп Бородинский" width="360" height="576"></a>
                 <div class="hidden-window">
                 <a href="#">
@@ -173,7 +182,7 @@
 
 
 
-    		<li>
+    		<li class="catalog-item">
                 <a href="#"><img src="img/img-mishka.jpg" alt="Интернет-магазин вязаных игрушек Мишка" width="360" height="576"></a>
 
                 <div class="hidden-window">
@@ -191,7 +200,7 @@
 
 
 
-    		<li>
+    		<li class="catalog-item">
                 <a href="#"><img src="img/img-aplus.jpg" alt="Учебный центр Аплюс" width="360" height="576"></a>
                 <div class="hidden-window">
                 <a href="#">
@@ -206,7 +215,7 @@
             </li>
 
 
-    		<li>
+    		<li class="catalog-item">
                 <a href="#"><img src="img/img-kvast.jpg" alt="Магазин крафтового кваса Кваст" width="360" height="576"></a>
                 <div class="hidden-window">
                 <a href="#">
@@ -222,17 +231,22 @@
             </li>
             
     	</ul>
+       
 
-    </section>
+</section>
 
+
+  
     <ul class="pages">
         <li>1</li>
         <li><a href="#">2</a></li>
         <li><a href="#">3</a></li>
         <li><a href="#">Следующая</a></li>
     </ul>
-
-    <section>
+</div>
+</div>
+</div> 
+<section>
         <h3 class="visually-hidden">Как нас найти</h3>
 
     <div class="address">
@@ -276,23 +290,27 @@
 
     </section>
 
-
 </main>
 
-
 <footer class="common-footer">
-    
-    <div>
+
+
+
+    <div class="container">
+    <div class="contacts-social">
+    <div class="footer-contacts">   
     <p class="offer">Давайте дружить, это выгодно</p>
     <p class="discount">Скидка 10% для друзей из социальных сетей</p>
+    </div>
     <ul class="footer-social">
             <li><a href="#">Вконтакте</a></li>
             <li><a href="#">Фейсбук</a></li>
             <li><a href="#">Инстаграмм</a></li>
         </ul>   
     </div>  
-    
+    </div>
 </footer>   
+
 
 	
 </body>

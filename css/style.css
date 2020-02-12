@@ -32,6 +32,14 @@ li {
 	list-style: none;
 }
 
+table {
+	padding-top: 45px;
+	text-align: left;
+}
+
+
+
+
 .hidden-window {
 	display:none;
 }
@@ -60,12 +68,17 @@ li {
 
 
 
+
 .common-header {
+   
    line-height: 30px;
    font-weight: 500;
    color: #000000;
    background-color: #cccccc;
    text-transform: uppercase;
+   justify-content: center;
+   margin:0;
+   padding:0;
 }
 
 
@@ -86,32 +99,97 @@ li {
 	border-bottom: none;
 }
 
+.container {
+	width:1160px;
+	margin: 0 auto;
+}
 
-	
 
 
-.privileges {
+.common-navigation {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	margin:0;
+   padding:0;
+}	
+
+.common-navigation img {
+	order: -1;
+	width:160px;
+}
+
+.site-navigation {
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 440px;
+    margin:0;
+   padding:0;
+
+}
+
+.basket-navigation {
+	margin:0;
+   padding:0;
+	width:140px;
+}
+
+.privilege-background {
 	background-color: #cccccc;
 }
 
-.privileges h3 {
+.privilege-list {
+	display: flex;
+}
+
+.privilege-item {
+	display: flex;
+}
+
+
+.privilege {
+    width: 380px;
+	background-color: #cccccc;
+}
+
+.slide {
+	
+	width:780px;
+}
+
+.privilege h3 {
 	font-size: 55px;
 	line-height: 55px;
 	font-weight: 500;
 	color: #000000;
 }
 
-.privileges .button {
+.privilege .button {
 	background-color: #ff6666;
 }
 
-.privileges .button:hover {
+.privilege .button:hover {
 	background-color: #ff3333;
 }
 
-.privileges .button:active {
+.privilege .button:active {
 	background-color: #cc3333;
 	color:#cc9999;
+}
+
+.services-list {
+	display:flex;
+	justify-content: space-between;
+	margin: 0;
+    padding: 0;
+    margin-bottom: 85px;
+	
+}
+
+.services-item {
+	width: 300px;
+	
 }
 
 .main-services h3 {
@@ -160,6 +238,37 @@ li {
 	color: #ffcc66;
 }
 
+.information {
+	display: flex;
+	
+	padding: 0;
+	margin-top: 10px;
+}
+
+.information-column-left {
+	width: 650px;
+	margin:0;
+	padding: 0;
+	
+}
+
+.information-column-right
+ {
+ 	display: flex;
+ 	flex-direction: column;
+ 	align-items: flex-end;
+	width: 500px;
+    margin:0;
+	padding: 0;
+	
+}
+
+.information-column-right-row2 {
+	
+	width: 360px;
+}
+
+
 
 .who-we-are {
 	font-size: 45px;
@@ -180,6 +289,7 @@ li {
 	line-height: 10px;
 	font-weight: 700;
 	color: #000000;
+	padding-bottom: 30px;
 }
 
 .definition-table td{
@@ -187,11 +297,24 @@ li {
 }
 
 .pages {
+	display: flex;
+     justify-content: space-between;
 	line-height: 18px;
 	font-weight: 500;
 	color:#000000;
 	text-transform: uppercase;
+	margin:0;
+	padding: 0;
+	width: 440px;
+	margin-right: 10px;
 	
+}
+
+.logos {
+	display: flex;
+	justify-content: space-between;
+	margin:0;
+	padding:0;
 }
 
 .address p {
@@ -221,16 +344,92 @@ li {
 	line-height: 22px;
 }
 
+.contacts-social {
+	display: flex;
+	flex-direction: row-reverse;
+	
+	align-items: baseline;
+	margin: 0;
+	padding:0;
+}
+
+.footer-social {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding:0;
+	padding-right: 15px;
+	width: 260px;
+	
+}
+
+
+
+.footer-contacts {
+	width: 545px;
+	margin-right: 180px;
+	margin-left: 140px;
+}
+
+.catalog {
+	display: flex;
+}
+
+.column-left {
+	width: 260px;
+}
+
+.column-right {
+	display: flex;
+	flex-direction: column;
+	width: 760px;
+}
+
+.sorting {
+	display: flex;
+	justify-content: space-between;
+}
+
+.catalog-sort-list {
+	display:flex;
+	justify-content: space-between;
+	width: 360px;
+}
+
+.catalog-list {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+    margin: 0;
+}
+
+.catalog-item {
+	width:360px;
+	padding:0;
+	margin:0;
+	margin-right: 40px;
+	margin-bottom: 40px;
+}
+
+.catalog-list li:nth-child(2n) {
+  margin-right: 0;
+  
+}
+
 .catalog-title h1 {
 	font-size: 55px;
 	line-height: 55px;
 	font-weight: 500;
 	text-align: center;
+	margin:0;
+	padding: 0;
 
 }
 
 .catalog-title {
 	background-color: #cccccc;
+	margin:0;
+	padding: 0;
 
 }
 
@@ -242,6 +441,12 @@ li {
 	font-weight: 700;
 	color:#000000;
 	text-transform: uppercase;
+
+}
+
+.catalog-price {
+	min-height: 260px;
+	/*сделано временно, для сетки, пока нет контента*/
 }
 
 .catalog-sort-title  {
@@ -250,6 +455,7 @@ li {
 	font-weight: 700;
 	color:#000000;
 	text-transform: uppercase;
+	width: 135px;
 }
 
 
@@ -283,6 +489,9 @@ li {
 	font-weight: 400;
 	color: #333333;
 	list-style: none;
+	padding-left: 0;
+
+
 
 }
 
@@ -296,4 +505,5 @@ li {
 	text-align: center;
 	vertical-align: middle;
 }
+
 
