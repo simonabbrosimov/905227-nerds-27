@@ -8,13 +8,16 @@ body {
     font-weight: 400;
     color: #333333;
     background-color: #ffffff;
-  
+    box-sizing: border-box;
+    outline: 2px solid blue;
 }
 
-/*img {
+
+
+img {
 	max-width: 100%;
 	height: auto;
-}*/
+}
 
 a {
     text-decoration: none;
@@ -39,6 +42,12 @@ sup {
 	font-weight: bold;
 }
 
+
+img {
+	max-width: 100%;
+
+	height: auto;
+}
 
 .without-markers li {
 	list-style: none;
@@ -138,7 +147,7 @@ input[type="radio"].visually-hidden {
 	width:1160px;
 	margin: 0 auto;
 	padding-left: 90px;
-	
+	outline: 2px solid red;
 }
 
 
@@ -280,7 +289,7 @@ input[type="radio"].visually-hidden {
 .slide {
 	margin:0;
 	padding:0;
-	width:780px;
+	/*width:780px;*/
 	padding-top: 17px;
 	padding-left: 52px;
 	
@@ -348,9 +357,14 @@ input[type="radio"].visually-hidden {
 	flex-direction: column;
 	align-items: flex-start;
 	width: 300px;
+	
+	
+	
+}
+
+.services-item:nth-child(1),
+.services-item:nth-child(2) {
 	margin-right: 100px;
-	
-	
 }
 
 .services-item .slogan  {
@@ -760,45 +774,58 @@ input[type="radio"].visually-hidden {
 	margin:0;
 	padding:0;
 	padding-top: 0px;
-	padding-bottom: 17px;
-	margin-bottom:80px;
+	padding-bottom:22px;
+	margin-bottom:83px;
 	border-top:2px solid #cccccc;
 	border-bottom:2px solid #cccccc;
 	
 	padding-right:40px;
 	padding-left:0px;
+	outline: 1px solid red;
 }
+
+
 
 .logos a {
 	display: block;
+
 }
+
+
 
 .logos li {
 	margin:0;
 	padding:0;
 	
+	outline: 1px solid red;
+	
+	
 }
 
 
 .logos .html-logo {
-    margin-top:35px;
-    margin-left:3px;
+    margin-top:49px;
+    margin-left:27px;
+    
 }
 
 
 .logos .borodinski-logo {
-	margin-top:28px;
-	margin-left: 62px;
+	margin-top:23px;
+	margin-left: 80px;
+	
 }
 
 .logos .pink-logo {
-	margin-top:35px;
-	margin-left:57px;
+	margin-top:40px;
+	margin-left:91px;
+	
 }
 
 .logos .mishka-logo {
-	margin-top:35px;
-	margin-left:52px;
+	margin-top:49px;
+	margin-left:113px;
+	
 }
 
 .logos li:nth-child(-n+3) {
@@ -825,7 +852,7 @@ input[type="radio"].visually-hidden {
 
 
 .about-us {
-	position: relative;
+	/*position: relative;*/
 	margin:0;
 	padding:0;
 	margin-top:30px;
@@ -837,24 +864,48 @@ input[type="radio"].visually-hidden {
 
 
 .address {
-    position: absolute;
+    /*position: absolute;*/
 	width: 319px;
-	height: 308px;
+	/*height: 308px;*/
 	background-color: #ffffff;
 	
 	padding:0px;
+	padding-top: 1px;
+	padding-bottom: 1px;
 	margin: 0px;
+	margin-left:140px;
+	margin-top:54px;
+	margin-bottom: 54px;
 	
-	top:54px;
-	left:140px;
+	/*top:54px;
+	left:140px;*/
 	
 
 }
 
 .map-marker {
-	position: absolute;
+	
+	padding:0;
+	margin: 0;
+	margin-top: 54px;
+	margin-left: 361px;
+	margin-top: 88px;
+	/*position: absolute;
 	top:73px;
-	left:820px;
+	left:820px;*/
+
+}
+
+.map-address-marker {
+	display: flex;
+	background-image: url("../img/map.jpg");
+	padding:0;
+	margin: 0;
+    padding-top: 1px;
+	width: 100%;
+	
+	background-repeat: no-repeat;
+	
 
 }
 
@@ -885,19 +936,21 @@ input[type="radio"].visually-hidden {
 	line-height: 30px;
 	font-weight: 700;
 	color: #000000;
-	margin-top: 56px;
+	margin-top: 55px;
 	margin-bottom: 28px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	padding-left:1px;
+	
 
 }
 
 .address .button {
     display: block;
 	background-color: #ff6666;
-	margin-bottom: 48px;
 	margin:0 auto;
+	margin-bottom: 47px;
+	
 	padding:16px 44px;
 	
 }
@@ -934,7 +987,8 @@ input[type="radio"].visually-hidden {
 	align-items: baseline;
 	margin: 0;
 	padding:0;
-	margin-top:5px;
+	margin-top:3px;
+	
 }
 
 .footer-social  {
@@ -948,6 +1002,7 @@ input[type="radio"].visually-hidden {
 	width: 260px;
 	align-self: flex-end;
 	
+	
 }
 
 
@@ -957,8 +1012,9 @@ input[type="radio"].visually-hidden {
 
 .footer-contacts {
 	width: 565px;
+	padding-top:5px;
 	margin-right: 200px;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 	
 	
 }
