@@ -12,7 +12,7 @@
 		<header class="common-header">
 			
 			<div class="container">
-				<nav class="common-navigation">
+				<nav class="common-navigation ">
 					<img src="img/nerds-logo.svg" alt="Логотип дизайн-студии Нёрдс" width="160" height="65">
 					<ul class="site-navigation  without-markers">
 						<li><a href="#">Студия</a></li>
@@ -45,20 +45,30 @@
 							<div class="slide"><img src="img/slide1.png" width="698" height="413" alt=""></div>
 						</div>
 						
-						<div class=" privilege hidden-window">
+						<div class="privilege-item hidden-window">
+						
+						<div class="privilege">
 							<h3>Любим математику как никто другой!</h3>
 							<p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
 							<div>
 								<a class="button" href="#">Узнать больше</a>
 							</div>
 						</div>
-						<div class="privilege hidden-window">
+						<div class="slide"><img src="img/slide2.png" width="698" height="413" alt=""></div>
+					</div>
+
+
+						<div class="privilege-item hidden-window">
+						<div class="privilege">
 							<h3>Только ночь, только хардкор!</h3>
 							<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается</p>
 							<div>
 								<a class="button" href="#">Узнать больше</a>
 							</div>
 						</div>
+						<div class="slide"><img src="img/slide3.png" width="698" height="413" alt=""></div>
+					</div>
+
 					</section>
 				</div>
 			</div>
@@ -145,31 +155,36 @@
 					</section>
 					<ul class="logos without-markers">
 						
-						<li class="html-logo"><a  href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/html.png" alt="Логотип HTML Академии" width="207" height="99"></a></li>
+						<li class="html-logo"><a  href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/html2.png" alt="Логотип HTML Академии" width="207" height="99"></a></li>
 						
 						
 						
-						<li class="borodinski-logo"><a href=""><img src="img/borodinski.png" alt="Логотип барбершопа Бородинский" width="227" height="99"></a></li>
+						<li class="borodinski-logo"><a href=""><img src="img/borodinski2.png" alt="Логотип барбершопа Бородинский" width="227" height="99"></a></li>
 						
 						
 						
-						<li class="pink-logo"><a href=""><img src="img/pink.png" alt="Логотип приложения для мобильных устройств Пинк" width="192" height="84"></a></li>
+						<li class="pink-logo"><a href=""><img src="img/pink2.png" alt="Логотип приложения для мобильных устройств Пинк" width="192" height="85"></a></li>
 						
 						
 						
-						<li class="mishka-logo"><a href=""><img src="img/mishka.png" alt="Логотип магазина вязаных игрушек работы Мишка" width="180" height="99"></a></li>
+						<li class="mishka-logo"><a href=""><img src="img/mishka2.png" alt="Логотип магазина вязаных игрушек работы Мишка" width="179" height="99"></a></li>
 						
 
 					</ul>
 				</div>
+
+      
+
 				<section class="about-us">
 					<h3 class="visually-hidden">Как нас найти</h3>
 					
-					<form class=" visually-hidden write-us-form" action="https://echo.htmlacademy.ru" method="post">
+					 <form class= "visually-hidden write-us-form" action="https://echo.htmlacademy.ru" method="post">
 						<div class="write-us-form-flex1">
 							
 							<h2>Напишите нам</h2>
+							
 							<button  class="button write-us-button" type="button"><img src="img/close-cross.svg" width="20" height="20" alt=""></button>
+
 						</div>
 						<div class="write-us-form-flex2">
 							<p class="form-item1">
@@ -184,7 +199,7 @@
 							</p>
 							<p class="form-item3">
 								<label for="form-user-text"> Текст письма: </label>
-								<textarea id="form-user-text" name="user_text" placeholder="В свободной форме"></textarea>
+								<textarea id="form-user-text" name="user_text" placeholder="В свободной форме" rows="1" cols="90"></textarea>
 								
 							</p>
 							
@@ -192,6 +207,7 @@
 						</div>
 					</form>
 					
+					<div class="down-container">
 					<div class="map-address-marker">
 					<div class="address">
 						<p class="trademark">nёrds design studio</p>
@@ -202,19 +218,23 @@
 					<p class="visually-hidden">
 						<img src="img/map.jpg" alt="Офис компании расположен по адресу:191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8" width="1440" height="416">
 					</p>
-					<p class="map-marker">
+					<div class="map-marker">
 						<img src="img/map-marker.png"  width="auto" height="189" alt="">
-					</p>
+					</div>
 				   </div>
+				</div>
 				</section>
 			</main>
 			<footer class="common-footer">
 				<div class="container">
 					<div class="contacts-social">
+                      
 						<div class="footer-contacts">
 							<p class="offer">Давайте дружить, это выгодно!</p>
 							<p class="discount">Скидка 10% для друзей из социальных сетей</p>
 						</div>
+
+					
 						<ul class="footer-social without-markers">
 							<li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span><svg xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15"><path fill="#FFF" d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.935-2.419z"/></svg></a></li>
 							<li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="22"><path fill="#FFF" d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg></a></li>

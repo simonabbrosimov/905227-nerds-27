@@ -10,8 +10,8 @@
     <body>
         <header class="common-header">
             <div class="container">
-                <nav class="common-navigation">
-                    <a href="index.html">
+                <nav class="common-navigation catalog-navigation">
+                    <a href="new-index.html">
                         <img src="img/nerds-logo.svg" alt="Логотип дизайн-студии Нёрдс" width="160" height="65">
                     </a>
                     <ul class="site-catalog-navigation without-markers">
@@ -35,10 +35,34 @@
             <div class="container">
                 <div class="catalog">
                     <div class="column-left">
+
                         <aside>
-                            <h2 class="catalog-price">Стоимость:</h2>
+<form method="get" action="https://echo.htmlacademy.ru">
+      <fieldset class="filter-item">
+       <legend class="catalog-price">Стоимость:</legend>
+        <div class="range-filter">
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar" style="margin-left: 7%; width: 60%"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
+          <div class="price-controls">
+            <label class="min-price">от <input name="min-price" type="number" value="0"></label>
+            <label class="max-price">до <input name="max-price" type="number" value="15000"></label>
+          </div>
+        </div>
+      </fieldset>
+
+
+
+                           
+
+
+
                             <h2 class="visually-hidden">Фильтр товаров</h2>
-                            <form method="get" action="https://echo.htmlacademy.ru">
+                            
                                 <fieldset>
                                     <legend class="catalog-form-title">Сетка:</legend>
                                     <ul class="catalog-form-items without-markers">
@@ -50,14 +74,14 @@
                                         </li>
                                         <li class="form-item">
                                             
-                                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="makeup-group" id="filter-makeup-group" value="fixed">
-                                            <label for="filter-makeup-group"> Фиксированная </label>
+                                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="makeup-group" id="filter-makeup-group1" value="fixed">
+                                            <label for="filter-makeup-group1"> Фиксированная </label>
                                             
                                         </li>
                                         <li class="form-item">
                                             
-                                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="makeup-group" id="filter-makeup-group" value="rubber">
-                                            <label for="filter-makeup-group"> Резиновая </label>
+                                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="makeup-group" id="filter-makeup-group2" value="rubber">
+                                            <label for="filter-makeup-group2"> Резиновая </label>
                                             
                                         </li>
                                     </ul>
@@ -223,48 +247,68 @@
                     </div>
                 </div>
             </div>
-            <section class="about-us">
-                <h3 class="visually-hidden">Как нас найти</h3>
-                
-                <form class=" visually-hidden write-us-form" action="https://echo.htmlacademy.ru" method="post">
-                    <div class="write-us-form-flex1">
-                        
-                        <h2>Напишите нам</h2>
-                        <button  type="button"   class="button write-us-button"><img src="img/close-cross.svg" width="20" height="20" alt=""></button>
+
+<section class="about-us">
+                    <h3 class="visually-hidden">Как нас найти</h3>
+                    
+                     <form class= "write-us-form visually-hidden" action="https://echo.htmlacademy.ru" method="post">
+                        <div class="write-us-form-flex1">
+                            
+                            <h2>Напишите нам</h2>
+                            
+                            <button  class="button write-us-button" type="button"><img src="img/close-cross.svg" width="20" height="20" alt=""></button>
+
+                        </div>
+                        <div class="write-us-form-flex2">
+                            <p class="form-item1">
+                                <label for="form-user-name"> Ваше имя:</label>
+                                <input  id="form-user-name" type="text"  name="user_name" placeholder="Имя Фамилия">
+                                
+                            </p>
+                            <p class="form-item2">
+                                <label for="form-user-email" > Ваш e-mail:</label>
+                                <input   id="form-user-email" type="email" name="user_email" placeholder="email@example.com">
+                                
+                            </p>
+                            <p class="form-item3">
+                                <label for="form-user-text"> Текст письма: </label>
+                                <textarea id="form-user-text" name="user_text" placeholder="В свободной форме" rows="1" cols="90"></textarea>
+                                
+                            </p>
+                            
+                            <button  class= "button " type="submit">Отправить</button>
+                        </div>
+                    </form>
+                    
+                    <div class="down-container">
+                    <div class="map-address-marker">
+                    <div class="address">
+                        <p class="trademark">nёrds design studio</p>
+                        <p class="p1">191186, Санкт-Петербург,<br>  ул. Б. Конюшенная, д. 19/8 </p>
+                        <p class="p2">тел. +7 (812) 275-75-75 </p>
+                        <button class ="button" type="button">Напишите нам</button>
                     </div>
-                    <div class="write-us-form-flex2">
-                        <p class="form-item1">
-                            <label for="form-user-name"> Ваше имя:</label>
-                            <input  id="form-user-name" type="text"  name="user_name" placeholder="Имя Фамилия">
-                            
-                        </p>
-                        <p class="form-item2">
-                            <label for="form-user-email" > Ваш e-mail:</label>
-                            <input   id="form-user-email" type="email" name="user_email" placeholder="email@example.com">
-                            
-                        </p>
-                        <p class="form-item3">
-                            <label for="form-user-text"> Текст письма: </label>
-                            <textarea id="form-user-text" name="user_text" placeholder="В свободной форме"></textarea>
-                            
-                        </p>
-                        
-                        <button  class= "button " type="submit">Отправить</button>
+                    <p class="visually-hidden">
+                        <img src="img/map.jpg" alt="Офис компании расположен по адресу:191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8" width="1440" height="416">
+                    </p>
+                    <div class="map-marker">
+                        <img src="img/map-marker.png"  width="auto" height="189" alt="">
                     </div>
-                </form>
-                <div class="address">
-                    <p class="trademark">nёrds design studio</p>
-                    <p class="p1">191186, Санкт-Петербург,<br>  ул. Б. Конюшенная, д. 19/8 </p>
-                    <p class="p2">тел. +7 (812) 275-75-75 </p>
-                    <button class ="button" type="button">Напишите нам</button>
+                   </div>
                 </div>
-                <p>
-                    <img src="img/map.jpg" alt="Офис компании расположен по адресу:191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8" width="1440" height="416">
-                </p>
-                <p class="map-marker">
-                    <img src="img/map-marker.png"  width="auto" height="189" alt="">
-                </p>
-            </section>
+                </section>
+
+
+
+
+
+
+
+
+
+
+
+           
         </main>
         <footer class="common-footer">
             <div class="container">
