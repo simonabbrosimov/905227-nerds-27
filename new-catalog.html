@@ -35,34 +35,27 @@
             <div class="container">
                 <div class="catalog">
                     <div class="column-left">
-
                         <aside>
-<form method="get" action="https://echo.htmlacademy.ru">
-      <fieldset class="filter-item">
-       <legend class="catalog-price">Стоимость:</legend>
-        <div class="range-filter">
-          <div class="range-controls">
-            <div class="scale">
-              <div class="bar" style="margin-left: 7%; width: 60%"></div>
-            </div>
-            <div class="toggle toggle-min"></div>
-            <div class="toggle toggle-max"></div>
-          </div>
-          <div class="price-controls">
-            <label class="min-price">от <input name="min-price" type="number" value="0"></label>
-            <label class="max-price">до <input name="max-price" type="number" value="15000"></label>
-          </div>
-        </div>
-      </fieldset>
-
-
-
-                           
-
-
-
-                            <h2 class="visually-hidden">Фильтр товаров</h2>
-                            
+                            <form method="get" action="https://echo.htmlacademy.ru">
+                                <fieldset class="filter-item">
+                                    <legend class="catalog-price">Стоимость:</legend>
+                                    <div class="range-filter">
+                                        <div class="range-controls">
+                                            <div class="scale">
+                                                <div class="bar" style="margin-left: 7%; width: 60%"></div>
+                                            </div>
+                                            <div class="toggle toggle-min"></div>
+                                            <div class="toggle toggle-max"></div>
+                                        </div>
+                                        <div class="price-controls">
+                                            <label class="min-price">от <input name="min-price" type="number" value="0"></label>
+                                            <label class="max-price">до <input name="max-price" type="number" value="15000"></label>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                
+                                <h2 class="visually-hidden">Фильтр товаров</h2>
+                                
                                 <fieldset>
                                     <legend class="catalog-form-title">Сетка:</legend>
                                     <ul class="catalog-form-items without-markers">
@@ -153,7 +146,7 @@
                                     <a  class="big-window" href="#">
                                         
                                     <img src="img/img-sedona.jpg" alt="Информационный сайт для туристов Седона" width="360" height="576"></a>
-                                    <div class="small-window hidden-window">
+                                    <div class="small-window">
                                         <a href="#">
                                             <h3>Sedona</h3>
                                         </a>
@@ -165,9 +158,9 @@
                                 </li>
                                 <li class="catalog-item">
                                     <a class="big-window" href="#">
-                                       
+                                        
                                     <img src="img/img-pink.jpg" alt="Приложение для мобильных устройств Пинк" width="360" height="576"></a>
-                                    <div class="small-window hidden-window">
+                                    <div class="small-window">
                                         <a href="#">
                                             <h3>Pink APP</h3>
                                         </a>
@@ -179,9 +172,9 @@
                                 </li>
                                 <li class="catalog-item">
                                     <a class="big-window" href="#">
-                                       
+                                        
                                     <img src="img/img-barbershop.jpg" alt="Барбершоп Бородинский" width="360" height="576"></a>
-                                    <div class="small-window hidden-window">
+                                    <div class="small-window">
                                         <a href="#">
                                             <h3>Barbershop</h3>
                                         </a>
@@ -193,9 +186,9 @@
                                 </li>
                                 <li class="catalog-item">
                                     <a class="big-window" href="#">
-                                       
+                                        
                                     <img src="img/img-mishka.jpg" alt="Интернет-магазин вязаных игрушек Мишка" width="360" height="576"></a>
-                                    <div class="small-window hidden-window">
+                                    <div class="small-window">
                                         <a href="#">
                                             <h3>Mishka</h3>
                                         </a>
@@ -209,7 +202,7 @@
                                     <a class="big-window" href="#">
                                         
                                     <img src="img/img-aplus.jpg" alt="Учебный центр Аплюс" width="360" height="576"></a>
-                                    <div class="small-window hidden-window">
+                                    <div class="small-window">
                                         <a href="#">
                                             <h3>A Plus</h3>
                                         </a>
@@ -223,7 +216,7 @@
                                     <a class="big-window" href="#">
                                         
                                     <img src="img/img-kvast.jpg" alt="Магазин крафтового кваса Кваст" width="360" height="576"></a>
-                                    <div class="small-window hidden-window">
+                                    <div class="small-window">
                                         <a href="#">
                                             <h3> Кваст </h3>
                                         </a>
@@ -247,68 +240,56 @@
                     </div>
                 </div>
             </div>
-
-<section class="about-us">
-                    <h3 class="visually-hidden">Как нас найти</h3>
+            <section class="about-us">
+                <h3 class="visually-hidden">Как нас найти</h3>
+                
+                <form class= "visually-hidden write-us-form" action="https://echo.htmlacademy.ru" method="post">
+                    <div class="write-us-form-flex1">
+                        
+                        <h2>Напишите нам</h2>
+                        
+                        <button  class="button write-us-button" type="button"><img src="img/close-cross.svg" width="20" height="20" alt=""></button>
+                    </div>
+                    <div class="write-us-form-flex2">
+                        <p class="form-item1">
+                            <label for="form-user-name"> Ваше имя:</label>
+                            <input  id="form-user-name" type="text"  name="user_name" placeholder="Имя Фамилия">
+                            
+                        </p>
+                        <p class="form-item2">
+                            <label for="form-user-email" > Ваш e-mail:</label>
+                            <input   id="form-user-email" type="email" name="user_email" placeholder="email@example.com">
+                            
+                        </p>
+                        <p class="form-item3">
+                            <label for="form-user-text"> Текст письма: </label>
+                            <textarea id="form-user-text" name="user_text" placeholder="В свободной форме" rows="1" cols="90"></textarea>
+                            
+                        </p>
+                        
+                        <button  class= "button " type="submit">Отправить</button>
+                    </div>
+                </form>
+                
+                
+                <div class="container-down flex">
                     
-                     <form class= "write-us-form visually-hidden" action="https://echo.htmlacademy.ru" method="post">
-                        <div class="write-us-form-flex1">
-                            
-                            <h2>Напишите нам</h2>
-                            
-                            <button  class="button write-us-button" type="button"><img src="img/close-cross.svg" width="20" height="20" alt=""></button>
-
-                        </div>
-                        <div class="write-us-form-flex2">
-                            <p class="form-item1">
-                                <label for="form-user-name"> Ваше имя:</label>
-                                <input  id="form-user-name" type="text"  name="user_name" placeholder="Имя Фамилия">
-                                
-                            </p>
-                            <p class="form-item2">
-                                <label for="form-user-email" > Ваш e-mail:</label>
-                                <input   id="form-user-email" type="email" name="user_email" placeholder="email@example.com">
-                                
-                            </p>
-                            <p class="form-item3">
-                                <label for="form-user-text"> Текст письма: </label>
-                                <textarea id="form-user-text" name="user_text" placeholder="В свободной форме" rows="1" cols="90"></textarea>
-                                
-                            </p>
-                            
-                            <button  class= "button " type="submit">Отправить</button>
-                        </div>
-                    </form>
-                    
-                    <div class="down-container">
-                    <div class="map-address-marker">
                     <div class="address">
                         <p class="trademark">nёrds design studio</p>
                         <p class="p1">191186, Санкт-Петербург,<br>  ул. Б. Конюшенная, д. 19/8 </p>
                         <p class="p2">тел. +7 (812) 275-75-75 </p>
                         <button class ="button" type="button">Напишите нам</button>
                     </div>
-                    <p class="visually-hidden">
-                        <img src="img/map.jpg" alt="Офис компании расположен по адресу:191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8" width="1440" height="416">
+                    <p>
+                        <img class="visually-hidden"  src="img/map.jpg" alt="Офис компании расположен по адресу:191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8" width="1440" height="416">
                     </p>
                     <div class="map-marker">
-                        <img src="img/map-marker.png"  width="auto" height="189" alt="">
+                        <img src="img/map-marker.png"  width="166" height="190" alt="">
                     </div>
-                   </div>
                 </div>
-                </section>
-
-
-
-
-
-
-
-
-
-
-
-           
+                
+            </section>
+            
         </main>
         <footer class="common-footer">
             <div class="container">
