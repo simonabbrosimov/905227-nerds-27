@@ -1,5 +1,6 @@
 
 
+
 body {
     margin: 0;
     padding: 0;
@@ -311,7 +312,7 @@ input[type="radio"].visually-hidden {
 	position: relative;
 	margin:0;
 	padding:0;
-	/*width:780px;*/
+	
 	padding-top: 17px;
 	padding-left: 51px;
 	
@@ -343,8 +344,8 @@ input[type="radio"].visually-hidden {
 
 
 
-.switcher
- {
+.switcher {
+
   background: #ffffff;
   width: 18px;
   height: 18px;
@@ -369,13 +370,7 @@ top:5px;
 right: 5px;
 
 
-
-
-
 }
-
-
-
 
 
 
@@ -754,11 +749,6 @@ right: 5px;
 
 
 
-
-
-
-
-
 .write-us-form {
 	display: flex;
 	flex-wrap: wrap;
@@ -783,7 +773,6 @@ right: 5px;
   
 	
 }
-
 
 
 
@@ -861,8 +850,6 @@ right: 5px;
 
 
 .write-us-form-flex2 .form-item1 {
-
-
 	margin-left:100px;
     width: 360px;
 
@@ -880,7 +867,6 @@ right: 5px;
 .form-item1 input:hover,
 .form-item2 input:hover,
 .form-item3 textarea:hover {
-
     outline: none;               
 	border-color: #cccccc;
 }
@@ -907,7 +893,6 @@ right: 5px;
 }
 
 .write-us-form-flex2 .form-item3 {
-	
 	margin-right: 100px;
 	margin-left: 100px;
 	
@@ -934,7 +919,6 @@ right: 5px;
 
 
 .form-item3 textarea {
-	
 	padding-top: 12px;
 	padding-bottom: 85px;
 	padding-left: 14px;
@@ -956,7 +940,6 @@ right: 5px;
 
 
 .logos {
-
 	display: flex;
 	
 	align-items:center;
@@ -987,8 +970,7 @@ right: 5px;
 	margin:0;
 	padding:0;
 	
-	
-	
+		
 	
 }
 
@@ -1067,7 +1049,6 @@ right: 5px;
 
 
 .about-us {
-	/*position: relative;*/
 	background: url("../img/map.jpg");
 
     
@@ -1097,9 +1078,9 @@ right: 5px;
 	flex-direction: column;
 	flex-wrap: wrap;
 	box-sizing: border-box;
-    /*position: absolute;*/
+   
 	width: 319px;
-	/*height: 308px;*/
+	
 	background-color: #ffffff;
 	padding-left:50px;
 	padding-right: 50px;
@@ -1112,8 +1093,6 @@ right: 5px;
 	border-radius: 5px;
 	
 	
-	/*top:54px;
-	left:140px;*/
 	
 
 }
@@ -1129,9 +1108,7 @@ right: 5px;
 	margin-right: 263px;
 	margin-left: 367px;
 	margin-top: 87px;
-	/*position: absolute;
-	top:73px;
-	left:820px;*/
+	
 
 }
 
@@ -1221,7 +1198,7 @@ right: 5px;
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: flex-end;
-	/*align-items: baseline;*/
+	
 	margin: 0;
 	margin-bottom: 70px;
 	padding:0;
@@ -1242,9 +1219,6 @@ right: 5px;
 
 	width: 260px;
 	
-
-	
-
 	
 }
 
@@ -1255,8 +1229,6 @@ right: 5px;
 
 .footer-contacts {
 	width: 565px;
-	
-	
 	margin-bottom: 5px;
 	
 	
@@ -1333,7 +1305,7 @@ right: 5px;
 	flex-wrap: wrap;
 	font-size: 14px;
 	line-height: 18px;
-	/*box-shadow: 0 0 0 3px green;*/
+	
     text-transform: uppercase;
 	width: 363px;
 	padding:0;
@@ -1607,7 +1579,6 @@ right: 5px;
 
 
 .catalog fieldset:nth-child(2) {
-	
 	margin-bottom: 25px
 }
 
@@ -1665,13 +1636,10 @@ right: 5px;
 .filter-input-checkbox:checked + label::before {
   content: "";
   position: absolute;
-
   width: 27px;
   height: 23px;
-  
   top:-3px;
   left: -36px;
-
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1773,23 +1741,13 @@ right: 5px;
 
 
 
-
-
-
-
-
-
-
-
-
-
 .filter-item {
   margin: 0;
   padding: 0;
   
   border: none;
   
-  /* Для демонстрации */
+  
   width: 260px;
   margin: 50px auto; 
 }
