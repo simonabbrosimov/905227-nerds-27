@@ -14,6 +14,9 @@ body {
 
 
 
+
+
+
 .width-100 {
     max-width: 100%;
     height: auto;
@@ -24,6 +27,9 @@ body {
 
     color: #000000;
 }
+
+
+
 
 .without-borders-fieldset {
     border: none;
@@ -112,10 +118,16 @@ input[type='radio'].visually-hidden {
 
     color: #ffffff;
     border: none;
+    border-radius:3px;
+
+    cursor: pointer;
 }
 
 
-
+.common-header .container {
+     margin-bottom: 0;
+   
+}
 
 .common-header {
     font-weight: 500;
@@ -131,6 +143,9 @@ input[type='radio'].visually-hidden {
     background-image: url('../img/fon.png');
 }
 
+.common-header a {
+    padding-bottom: 5px;
+}
 
 
 
@@ -139,12 +154,13 @@ input[type='radio'].visually-hidden {
 }
 
 .common-header a:focus {
-    padding-bottom: 5px;
-
+   
     border-bottom: 2px solid #ff6666;
 }
+    
 
-.common-header a:focus:first-of-type {
+
+.common-header .without-decoration-a-logo:focus {
     border-bottom: none;
 }
 
@@ -152,7 +168,8 @@ input[type='radio'].visually-hidden {
 .common-header a:active {
     color: #999999;
     border-bottom: none;
-}
+    
+  } 
 
 .container,
 .main-services-container {
@@ -173,6 +190,7 @@ input[type='radio'].visually-hidden {
 
     flex-wrap: wrap;
     align-items: center;
+    
 }
 
 
@@ -183,6 +201,7 @@ input[type='radio'].visually-hidden {
     margin: 0;
     margin-right: 202px;
     padding: 0;
+
 }
 
 
@@ -211,6 +230,8 @@ input[type='radio'].visually-hidden {
 
     flex-wrap: wrap;
     justify-content: space-between;
+   
+
 }
 
 .site-catalog-navigation {
@@ -239,6 +260,8 @@ input[type='radio'].visually-hidden {
 
     flex-wrap: wrap;
     justify-content: space-between;
+
+
 }
 
 .catalog-navigation .basket-catalog-navigation {
@@ -255,6 +278,7 @@ input[type='radio'].visually-hidden {
     margin: 0;
     margin-left: 40px;
     padding: 0;
+    padding-bottom: 5px;
 }
 
 .basket-link svg {
@@ -263,6 +287,7 @@ input[type='radio'].visually-hidden {
     left: -40px;
 
     opacity: 0.3;
+    
 }
 
 
@@ -280,10 +305,13 @@ input[type='radio'].visually-hidden {
 
 
 .privilege-list {
+    position: relative;
+
     display: flex;
 
     margin: 0;
     padding: 0;
+    
 }
 
 
@@ -306,12 +334,14 @@ input[type='radio'].visually-hidden {
 }
 
 .slide {
-    position: relative;
+   
 
     margin: 0;
     padding: 0;
     padding-top: 17px;
     padding-left: 51px;
+
+   
 }
 
 
@@ -320,7 +350,8 @@ input[type='radio'].visually-hidden {
 
     margin: 0;
     padding: 0;
-}
+
+   }
 
 
 
@@ -328,14 +359,16 @@ input[type='radio'].visually-hidden {
 
 .switchers {
     position: absolute;
-    top: 416px;
+    top: 300px;
     bottom: 0;
-    left: 5px;
-
-    width: 100%;
+    left: 480px;
+   
+    
+    width: 120px;
     height: 30px;
 
     text-align: center;
+    
 }
 
 
@@ -396,6 +429,7 @@ input[type='radio'].visually-hidden {
 }
 
 .privilege .button {
+    
     margin-bottom: 55px;
 }
 
@@ -411,6 +445,9 @@ input[type='radio'].visually-hidden {
 .privilege .button:active {
     color: #cc9999;
     background-color: #cc3333;
+    box-shadow: 0 -3px 1px 0 #a32929;
+
+
 }
 
 
@@ -432,6 +469,8 @@ input[type='radio'].visually-hidden {
     padding-bottom: 80px;
 
     border-bottom: 2px solid #cccccc;
+
+    
 }
 
 .services-item {
@@ -513,6 +552,7 @@ input[type='radio'].visually-hidden {
 .button-web:active {
     color: #cc9999;
     background-color: #cc3333;
+    box-shadow: 0 -3px 1px 0 #a32929;
 }
 
 .button-app {
@@ -526,6 +566,7 @@ input[type='radio'].visually-hidden {
 .button-app:active {
     color: #33cc66;
     background-color: #009966;
+    box-shadow: 0 -3px 1px 0 #006644;
 }
 
 .button-presentation {
@@ -539,6 +580,7 @@ input[type='radio'].visually-hidden {
 .button-presentation:active {
     color: #ffcc66;
     background-color: #cc9933;
+    box-shadow: 0 -3px 1px 0 #a37a29;
 }
 
 .information {
@@ -551,8 +593,9 @@ input[type='radio'].visually-hidden {
 .information-column-left {
     width: 651px;
     margin: 0;
-    margin-top: 10px;
+    margin-top: 9px;
     padding: 0;
+   
 }
 
 .marker-red {
@@ -593,7 +636,7 @@ input[type='radio'].visually-hidden {
 
     width: 499px;
     margin: 0;
-    margin-top: 23px;
+    margin-top: 21px;
     margin-left: 10px;
     padding: 0;
 
@@ -693,6 +736,13 @@ input[type='radio'].visually-hidden {
 
 .pages-item {
     margin-right: 10px;
+
+
+}
+
+.pages-item a,
+.pages-item-last a {
+    border-radius: 3px;
 }
 
 .pages-item-last {
@@ -702,21 +752,23 @@ input[type='radio'].visually-hidden {
 .pages-item-last a {
     display: block;
 
-    padding: 16px 78px;
+    padding: 13px 75px;
 
     color: #000000;
+    border: 3px solid #cccccc;
     background-color: #cccccc;
-    background-image: url('../img/fon.png');
+    
 }
 
 .pages-item a {
     display: block;
 
-    padding: 16px 21px;
+    padding: 13px 18px;
 
     color: #000000;
+    border: 3px solid #cccccc;
     background-color: #cccccc;
-    background-image: url('../img/fon.png');
+    
 }
 
 .current-item a {
@@ -735,10 +787,11 @@ input[type='radio'].visually-hidden {
 }
 
 .pages-list a:active {
+    box-shadow: 0 -3px 1px 0px  #808080;
     color: #999999;
     outline: none;
     background-image: none;
-    box-shadow: 0 -3px 1px 0 #999999;
+    
 }
 
 
@@ -760,7 +813,10 @@ input[type='radio'].visually-hidden {
     margin-top: -295px;
     margin-left: -480px;
     margin-left: -435px;
-    padding: 0;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 1px;
+    padding-bottom: 1px;
 
     border: none;
     background-color: #ffffff;
@@ -824,7 +880,7 @@ input[type='radio'].visually-hidden {
 
     margin: 0;
     margin-right: 440px;
-    margin-left: 100px;
+   
     padding: 0;
 }
 
@@ -837,15 +893,17 @@ input[type='radio'].visually-hidden {
     width: 960px;
 
     flex-wrap: wrap;
-    justify-content: space-between;
+    
 }
+
 
 
 
 
 .write-us-form-flex2 .form-item1 {
     width: 360px;
-    margin-left: 100px;
+    margin-right: 40px;
+   
 }
 
 
@@ -881,14 +939,10 @@ input[type='radio'].visually-hidden {
 
 .write-us-form-flex2 .form-item2 {
     width: 360px;
-    margin-right: 100px;
+   
 }
 
-.write-us-form-flex2 .form-item3 {
-    margin-right: 100px;
-    margin-left: 100px;
-    
-}
+
 
 
 
@@ -918,6 +972,9 @@ input[type='radio'].visually-hidden {
     padding-bottom: 85px;
     padding-left: 14px;
 
+    max-width: 100%;
+    width: 760px;
+
     resize: none;
 
     overflow: auto;
@@ -929,9 +986,11 @@ input[type='radio'].visually-hidden {
     width: 260px;
     margin-top: 24px;
     margin-bottom: 84px;
-    margin-left: 100px;
 
-    background-color: #ff6666;
+     background-color: #ff6666;
+   
+
+   
 }
 
 
@@ -940,11 +999,11 @@ input[type='radio'].visually-hidden {
     display: flex;
 
     margin: 0;
-    margin-bottom: 78px;
+    margin-bottom: 81px;
     padding: 0;
     padding-top: 0;
     padding-right: 40px;
-    padding-bottom: 20px;
+    padding-bottom: 37px;
     padding-left: 0;
 
     border-top: 2px solid #e6e6e6;
@@ -952,6 +1011,8 @@ input[type='radio'].visually-hidden {
 
     align-items: center;
 
+    flex-wrap: wrap;
+   
     
 }
 
@@ -970,30 +1031,30 @@ input[type='radio'].visually-hidden {
 
 
 .logos .html-logo {
-    margin-top: 55px;
-    margin-left: 27px;
+    margin-top: 60px;
+    margin-left: 31px;
 
     opacity: 0.2;
 }
 
 
 .logos .borodinski-logo {
-    margin-top: 26px;
-    margin-left: 82px;
+    margin-top: 45px;
+    margin-left: 95px;
 
     opacity: 0.2;
 }
 
 .logos .pink-logo {
-    margin-top: 40px;
-    margin-left: 88px;
+    margin-top: 45px;
+    margin-left: 103px;
 
     opacity: 0.2;
 }
 
 .logos .mishka-logo {
-    margin-top: 37px;
-    margin-left: 115px;
+    margin-top: 52px;
+    margin-left: 123px;
 
     opacity: 0.2;
 }
@@ -1023,18 +1084,18 @@ input[type='radio'].visually-hidden {
 }
 
 .logos li:nth-child(1)::after {
-    top: 9px;
-    left: 252px;
+    top: 4px;
+    left: 248px;
 }
 
 .logos li:nth-child(2)::after {
-    top: 24px;
-    left: 263px;
+    top: 20px;
+    left: 253px;
 }
 
 .logos li:nth-child(3)::after {
-    top: 9px;
-    left: 248px;
+    top: 2px;
+    left: 241px;
 }
 
 
@@ -1043,14 +1104,17 @@ input[type='radio'].visually-hidden {
 
 
 .about-us {
+    height: 416px;
+
     margin: 0;
     margin-top: 30px;
-    margin-bottom: 33px;
+    margin-bottom: 40px;
     padding: 0;
 
     background: url('../img/map.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+   
 }
 
 .container-down {
@@ -1082,6 +1146,8 @@ input[type='radio'].visually-hidden {
     background-color: #ffffff;
 
     flex-wrap: wrap;
+
+
 }
 
 
@@ -1089,10 +1155,9 @@ input[type='radio'].visually-hidden {
 
 .map-marker {
     margin: 0;
-    margin-top: 54px;
-    margin-top: 87px;
-    margin-right: 263px;
-    margin-left: 367px;
+    margin-top: 89px;
+    margin-right: 269px;
+    margin-left: 361px;
     padding: 0;
 }
 
@@ -1119,6 +1184,14 @@ input[type='radio'].visually-hidden {
 }
 
 
+
+
+a.without-decoration-aa,
+a.without-decoration-aa:link,
+a.without-decoration-aa:visited{
+    color: #666666;
+    text-decoration: none;
+}
 
 
 .trademark {
@@ -1231,16 +1304,21 @@ input[type='radio'].visually-hidden {
 
 .social-button:active {
     background-color: #cc3333;
+    box-shadow: 0 -3px 1px 0 #961728;
 }
 
-.social-button:active path {
+/*.social-button:active path {
     fill: #cc6666;
-}
+}*/
 
 .catalog {
     display: flex;
 
+    margin:0;
+    padding: 0;
+
     flex-wrap: wrap;
+    
 }
 
 .column-left {
@@ -1381,6 +1459,8 @@ input[type='radio'].visually-hidden {
 
 
 
+
+
 .catalog-sort-list li:hover {
     color: #999999;
 }
@@ -1419,6 +1499,8 @@ input[type='radio'].visually-hidden {
     bottom: 6px;
     left: 0;
 
+    display: none;
+
     width: 360px;
     height: 232px;
     margin: 0;
@@ -1427,6 +1509,11 @@ input[type='radio'].visually-hidden {
     background-color: #cccccc;
     background-image: url('../img/fon.png');
 }
+
+.catalog-item:hover .small-window {
+    display: block;
+}
+
 
 .catalog-item .big-window {
     position: relative;
@@ -1527,9 +1614,10 @@ input[type='radio'].visually-hidden {
     margin: 0;
     margin-bottom: 50px;
     padding: 0;
-    padding-top: 55px;
+    padding-top: 50px;
     padding-bottom: 108px;
     padding-left: 355px;
+   
     
     
 }
